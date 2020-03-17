@@ -1,0 +1,5 @@
+<% @users.each do |u| %>
+<% @link = "/user/#{u.id}" %>
+ <!--<a href="https://www.w3schools.com">Visit W3Schools</a>-->
+<p><%= u.name %> <a href=" <%= @link %>">Display</a></p>
+<% end %>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<p>Team ID: <%= @team.id.to_s %></p>
+<p>Team name: <%= @team.name %></p>
+<p>Team notes: <%= @team.notes %></p>
+<h2>Team members</h2>
+<% @team.users.each do |user| %>
+<p>User name: <%= user.name %></p>
+<% end %>
+</body>
+</html>

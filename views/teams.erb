@@ -1,0 +1,8 @@
+<!--Display the name of each team, -->
+<!--and next to it a link (meaning an -->
+<!--<a></a> entry, with appropriate href)-->
+
+<% @teams.each do |u| %>
+<% @link = "/team/#{u.id}" %>
+<p><%= u.name %> <a href=" <%= @link %>">Display</a></p>
+<% end %>
